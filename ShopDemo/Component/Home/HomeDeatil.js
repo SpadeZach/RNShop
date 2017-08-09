@@ -10,30 +10,22 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity,
+  TouchableOpacity
 } from 'react-native';
-import {Navigator} from 'react-native-deprecated-custom-components';
 
-var HomeDeatil = require('./HomeDeatil');
-
-var Home = React.createClass({
+var HomeDeatil = React.createClass({
   render(){
     return(
       <View style={styles.container}>
-        <TouchableOpacity onPress={()=>{this.pushToDeatil()}}>
-         <Text>Home</Text>
+      <TouchableOpacity onPress={()=>{this.popToHome()}}>
+         <Text>HomeDeatil</Text>
          </TouchableOpacity>
       </View>
     );
   },
-  //跳转到二级界面
-  pushToDeatil(){
-    this.props.navigator.push({
-      component: HomeDeatil,
-      title:'详情',
-      })
-   }
-
+  popToHome(){
+    this.props.navigator.pop();
+  }
 }); 
 
 const styles = StyleSheet.create({
@@ -46,5 +38,5 @@ const styles = StyleSheet.create({
 });
 
 //输出组件
-module.exports = Home;
+module.exports = HomeDeatil;
 
