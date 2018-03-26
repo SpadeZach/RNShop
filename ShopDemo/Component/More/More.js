@@ -30,6 +30,61 @@ var More = React.createClass({
             />
           </View>
 
+           <View style={{marginTop:15}}>
+            <CommonCell 
+            title ='省流量模式'
+            isSwitch = {true}
+            />
+          </View>
+           <View>
+            <CommonCell 
+            title='消息提醒'
+            />
+          </View>
+          <View>
+            <CommonCell 
+            title='邀请好友'
+            />
+          </View>
+           <View>
+            <CommonCell 
+            title='清空缓存'
+            rightTitle='1.99MB'
+            />
+          </View>
+
+          <View style={{marginTop:15}}>
+            <CommonCell 
+            title='问卷调查'
+            />
+          </View>
+          <View>
+            <CommonCell 
+            title='支付帮助'
+            />
+          </View>
+          <View>
+            <CommonCell 
+            title='网络诊断'
+            />
+          </View>
+          <View>
+            <CommonCell 
+            title='关于美图'
+            />
+          </View>
+          <View>
+            <CommonCell 
+            title='我要应聘'
+            />
+          </View>
+
+           <View style={{marginTop:15}}>
+            <CommonCell 
+            title='精品应用'
+            />
+          </View>
+
         </ScrollView>
       </View>
     );
@@ -79,3 +134,7 @@ const styles = StyleSheet.create({
 
 //输出组件
 module.exports = More;
+
+
+
+
